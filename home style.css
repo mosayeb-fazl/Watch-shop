@@ -1,0 +1,24 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 2000px;
+    background-color: white;
+}
+.the-header-div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 150px;
+    padding-right: 50px;
+    padding-top: 50px;
+}
+.the-header-div img{
+  height: 34px;
+  width: 184px;
+}
+.the-header-tabs a{
+    text-decoration: none;
+    color: gray;
+}
