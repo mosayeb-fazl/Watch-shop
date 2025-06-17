@@ -2,23 +2,88 @@
     padding: 0;
     margin: 0;
 }
-body{
-    height: 2000px;
-    background-color: white;
-}
 .the-header-div{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding-left: 150px;
-    padding-right: 50px;
-    padding-top: 50px;
+    padding: 30px 0px;
+    text-align: center;
 }
 .the-header-div img{
   height: 34px;
   width: 184px;
+  margin-right: 90px;
+  margin-left: 150px;
+}
+.the-header-tabs{
+    margin: 0px 82.25px;
+    /* padding-top:7px; */
 }
 .the-header-tabs a{
     text-decoration: none;
-    color: gray;
+    color: #a3a3a3;
+    font-size:20px;
+    font-family: 'Cormorant Garamond' sans-serif;
+    margin: 0px 20px;
+    padding: 10px 0px 15px;
+}
+.the-header-tabs a:hover{
+    color:black;
+}
+ .the-header-tabs a {
+  position: relative;
+  display: inline-block;
+}
+.the-header-tabs a:not(.first-a):hover::before {
+  content: "";
+  background-color: rgb(170, 170, 170);
+  height: 1px;
+  width: 70px;
+  position: absolute;
+  top: 0;
+  left: 50%; 
+  transform: translateX(-50%); 
+}
+.the-header-tabs a:not(.first-a):hover::after {
+  content: "";
+  background-color: rgb(170, 170, 170);
+  height: 1px;
+  width: 70px;
+  position: absolute;
+  bottom: 0;
+  left: 50%; 
+  transform: translateX(-50%);
+}
+
+.the-header-tabs .first-a{
+    color:black;
+}
+.first-a {
+    border-top: 1px solid rgb(170, 170, 170);
+    border-bottom:  1px solid rgb(170, 170, 170) ;
+}
+.the-header-tabs i {
+    font-size:15px;
+    padding-left: 7px;
+}
+.Contact-us{
+    border-radius: 50px;
+    text-decoration: none;
+    padding: 19px 45px;
+    background: black;
+    color: white;
+}
+.Contact-us:hover{
+    background-color: rgb(50, 50, 255);
+
+}
+.cart-icon {
+  color:black;
+  font-size: 1.3rem;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: white;
+  border: 1px solid rgb(220, 220, 220);
+  padding: 15px;
+  margin-left: 20px;
 }
